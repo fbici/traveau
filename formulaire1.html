@@ -1,12 +1,40 @@
 <html>
 <style type="text/css">
-h1{color:blue;text-decoration:underline;}
+h2{color:blue;text-decoration:underline;}
+fieldset{
+  width:800px;
+  text-align:center;
+  margin-left:0px;
+  border:solid 3px green;
+  border-radius:20px;
+  padding:0px;
+  padding-top:0px;
+  background-color:pink;
+}
+  fieldset input[type="text"]{
+    padding:1px 60px;
+    border-radius:20px;
+    border:black solid 2px;
+    margin:0px 0px;
+  }
+  p#moi{
+    text-align:center;
+    margin-bottom:0px;
+    font-size:15px;
+  }
+  textarea{
+   padding:1px 60px;
+    border-radius:20px;
+    border:black solid 2px;
+    margin:0px 0px;
+  } 
+  
 </style>
-<h1 style="text-align:center"> FORMULAIRE D'ENREGISTREMENT 1</h1>
+<h2 style="text-align:center"> FORMULAIRE D'ENREGISTREMENT 1</h2>
 <body>
 <form method="post" action="traitement.php">
 <fieldset>
-<legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+<legend><p id="moi">Vos coordonnées</p></legend> <!-- Titre du fieldset -->
 <label for="nom">Quel est votre nom ?</label><br />
 <input type="text" name="nom" id="nom" tabindex="10" /><br />
 <label for="prenom">Quel est votre prénom ?</label><br />
@@ -15,7 +43,7 @@ h1{color:blue;text-decoration:underline;}
 <input type="text" name="email" id="email" tabindex="30" /><br />
 </fieldset>
 <fieldset>
-<legend>Votre souhait</legend> <!-- Titre du fieldset -->
+<legend><p id="moi">Votre souhait</p></legend> <!-- Titre du fieldset -->
 <p>
 Faites un souhait que vous voudriez voir exaucé :<br />
 <input type="radio" name="souhait" value="riche" id="riche" tabindex="40" /> <label for="riche">Etre
